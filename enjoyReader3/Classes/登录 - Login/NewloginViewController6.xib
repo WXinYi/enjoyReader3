@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewloginViewController">
+            <connections>
+                <outlet property="loginButton" destination="yUL-39-Q0q" id="IyD-4y-8l1"/>
+                <outlet property="phoneCode" destination="5O4-1X-AYR" id="IhD-ZQ-djs"/>
+                <outlet property="phoneIdLabel" destination="uyK-8O-jJn" id="DGC-6a-ceo"/>
+                <outlet property="phoneIdTextField" destination="DFI-th-hbj" id="NLf-h8-fxI"/>
+                <outlet property="phoneTextField" destination="inL-HM-u1z" id="YyO-nf-jGK"/>
+                <outlet property="qqButton" destination="PeQ-R6-4Pa" id="wJg-yA-ifA"/>
+                <outlet property="sinaButton" destination="s7A-RG-pfg" id="FKH-G2-Z2R"/>
+                <outlet property="view" destination="eXv-4e-yNX" id="ABE-XX-pS5"/>
+                <outlet property="weixinButton" destination="b5p-S1-p6F" id="NQe-hl-2Pp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eXv-4e-yNX">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7A-RG-pfg">
+                    <rect key="frame" x="254" y="480" width="40" height="40"/>
+                    <state key="normal" backgroundImage="dengluye_icon_weibo">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sina:" destination="-1" eventType="touchUpInside" id="GkX-y5-0Az"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5p-S1-p6F">
+                    <rect key="frame" x="169" y="480" width="40" height="40"/>
+                    <state key="normal" backgroundImage="dengluye_icon_weixin">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="weixin:" destination="-1" eventType="touchUpInside" id="fQk-Uy-fDq"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dengluye_icon_yanzhengma" translatesAutoresizingMaskIntoConstraints="NO" id="D7X-p6-6Ke">
+                    <rect key="frame" x="35" y="317" width="14" height="16"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DFI-th-hbj">
+                    <rect key="frame" x="71" y="305" width="154" height="42"/>
+                    <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dengluye_icon_zhanghao" translatesAutoresizingMaskIntoConstraints="NO" id="vZp-ml-O9X">
+                    <rect key="frame" x="35" y="259" width="14" height="16"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A5P-2p-RXT">
+                    <rect key="frame" x="17" y="293" width="340" height="1"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Qf-Yx-2TC">
+                    <rect key="frame" x="17" y="353" width="340" height="1"/>
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="inL-HM-u1z">
+                    <rect key="frame" x="71" y="245" width="286" height="42"/>
+                    <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="获取验证码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyK-8O-jJn">
+                    <rect key="frame" x="269" y="311" width="80" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.49484502126479296" green="0.49245446560650891" blue="0.49723557692307696" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5O4-1X-AYR">
+                    <rect key="frame" x="262" y="310" width="93" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="dengluye_button_yanzhengma_buliang">
+                        <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted" image="获取验证码.png"/>
+                    <connections>
+                        <action selector="phoneid:" destination="-1" eventType="touchUpInside" id="anp-yO-O6q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeQ-R6-4Pa">
+                    <rect key="frame" x="82" y="479" width="40" height="40"/>
+                    <state key="normal" backgroundImage="dengluye_icon_qq">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="qq:" destination="-1" eventType="touchUpInside" id="1ye-SX-StI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.49999999999999961" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUL-39-Q0q">
+                    <rect key="frame" x="17" y="384" width="337" height="39"/>
+                    <color key="backgroundColor" red="0.76470588240000004" green="0.32156862749999998" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="登录">
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yindaoye_logo_02" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ1-jg-Yfz">
+                    <rect key="frame" x="127" y="53" width="121" height="121"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lay-3F-kFY">
+                    <rect key="frame" x="317" y="27" width="32" height="31"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <state key="normal" backgroundImage="yindaoye_icon_quxiao">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="MGm-IX-cvY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="-238.5" y="-42.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dengluye_button_yanzhengma_buliang" width="74" height="25"/>
+        <image name="dengluye_icon_qq" width="28" height="28"/>
+        <image name="dengluye_icon_weibo" width="28" height="28"/>
+        <image name="dengluye_icon_weixin" width="28" height="28"/>
+        <image name="dengluye_icon_yanzhengma" width="19" height="19"/>
+        <image name="dengluye_icon_zhanghao" width="19" height="19"/>
+        <image name="yindaoye_icon_quxiao" width="22" height="22"/>
+        <image name="yindaoye_logo_02" width="121" height="121"/>
+        <image name="获取验证码.png" width="93" height="28"/>
+    </resources>
+</document>

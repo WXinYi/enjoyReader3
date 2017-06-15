@@ -1,0 +1,48 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3998+++0C52092" : {
+
+    },
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031+++F4CBFEC" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "trunk"
+    },
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031+++A36485E" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3998+++0C52092" : 0,
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031+++F4CBFEC" : 0,
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031+++A36485E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AC59B526-E0FC-4177-8F14-9C14288109A7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3998+++0C52092" : "enjoyReader3\/",
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031+++F4CBFEC" : "",
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031+++A36485E" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "enjoyReader3",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "enjoyReader3.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.fingermob.com\/svn\/ads",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031+++A36485E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.fingermob.com\/svn\/ads",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031+++F4CBFEC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.fingermob.com\/svn\/ads",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3998+++0C52092"
+    }
+  ]
+}

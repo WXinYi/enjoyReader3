@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="KGk-i7-Jjw" customClass="PersonalTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="timg" translatesAutoresizingMaskIntoConstraints="NO" id="Y8P-2a-IRx">
+                        <frame key="frameInset" width="1000" height="1000"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="HeY-2G-aIV"/>
+                            <constraint firstAttribute="height" constant="50" id="s6S-bB-2aV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="仙剑奇侠传" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJB-IM-nR7">
+                        <frame key="frameInset" width="1000" height="1000"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="HyH-Di-coO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="17 万字 | 1234 人看过 | 2345 人赞" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBg-Z3-I2e">
+                        <frame key="frameInset" width="1000" height="1000"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="aSw-FH-PYf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KA4-TJ-NiC">
+                        <frame key="frameInset" width="1000" height="1000"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="Oa6-EL-SDi"/>
+                            <constraint firstAttribute="height" constant="20" id="eXZ-4E-zoS"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="icon_coagao"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Y8P-2a-IRx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="4CV-0w-AUZ"/>
+                    <constraint firstItem="hBg-Z3-I2e" firstAttribute="top" secondItem="YJB-IM-nR7" secondAttribute="bottom" constant="14" id="7TZ-49-gRM"/>
+                    <constraint firstItem="hBg-Z3-I2e" firstAttribute="leading" secondItem="Y8P-2a-IRx" secondAttribute="trailing" constant="10" id="CS5-Oe-Gy0"/>
+                    <constraint firstAttribute="trailing" secondItem="KA4-TJ-NiC" secondAttribute="trailing" constant="17" id="OZh-cE-Z5a"/>
+                    <constraint firstItem="YJB-IM-nR7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="VUt-LM-G50"/>
+                    <constraint firstAttribute="bottom" secondItem="KA4-TJ-NiC" secondAttribute="bottom" constant="22" id="aiW-1M-WDl"/>
+                    <constraint firstItem="Y8P-2a-IRx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="cZM-aB-BcE"/>
+                    <constraint firstItem="YJB-IM-nR7" firstAttribute="leading" secondItem="Y8P-2a-IRx" secondAttribute="trailing" constant="10" id="ern-JA-xSJ"/>
+                    <constraint firstItem="KA4-TJ-NiC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="pBK-lX-sxn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="Personalicon" destination="Y8P-2a-IRx" id="1Bn-63-pod"/>
+                <outlet property="personalInfo" destination="hBg-Z3-I2e" id="DD3-gu-CEN"/>
+                <outlet property="personalTitle" destination="YJB-IM-nR7" id="GBe-Dq-mIw"/>
+                <outlet property="titleToInfoSize" destination="7TZ-49-gRM" id="Hf6-4W-ohU"/>
+                <outlet property="writeBtn" destination="KA4-TJ-NiC" id="b7O-vm-a4b"/>
+            </connections>
+            <point key="canvasLocation" x="-475" y="-21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_coagao" width="32" height="36"/>
+        <image name="timg" width="80" height="100"/>
+    </resources>
+</document>

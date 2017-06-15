@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="KGk-i7-Jjw" customClass="ExtractTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在路的内大街了家里看电视就立刻改扩建及风格的空间你说的你们是你的麻烦你什么地方你说的哪方面是每年的发生" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8c-FE-Lid">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.19605264067649841" green="0.19609326124191284" blue="0.19605004787445068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="摘自《书名》" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyQ-xA-Clf">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="VwE-AP-cQZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.78344881534576416" green="0.39364498853683472" blue="0.38436201214790344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08-12 12:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWq-ch-FxA">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="gWS-nA-l9U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.59601163864135742" green="0.59611696004867554" blue="0.59600502252578735" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="HWq-ch-FxA" secondAttribute="bottom" constant="16" id="53m-1C-FFW"/>
+                    <constraint firstItem="hyQ-xA-Clf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="CWv-sE-Iie"/>
+                    <constraint firstItem="HWq-ch-FxA" firstAttribute="top" secondItem="hyQ-xA-Clf" secondAttribute="bottom" constant="10" id="CnU-lD-2ug"/>
+                    <constraint firstItem="hyQ-xA-Clf" firstAttribute="top" secondItem="y8c-FE-Lid" secondAttribute="bottom" constant="12" id="Gxk-BW-ANG"/>
+                    <constraint firstItem="HWq-ch-FxA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="KxD-US-CQC"/>
+                    <constraint firstItem="y8c-FE-Lid" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="RSY-2e-pZW"/>
+                    <constraint firstItem="y8c-FE-Lid" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Tdl-Kc-0dn"/>
+                    <constraint firstItem="hyQ-xA-Clf" firstAttribute="top" secondItem="y8c-FE-Lid" secondAttribute="bottom" constant="12" id="jLk-FG-K1g"/>
+                    <constraint firstAttribute="trailing" secondItem="y8c-FE-Lid" secondAttribute="trailing" constant="17" id="xqp-Eh-Qk3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bookNameLabel" destination="hyQ-xA-Clf" id="eHF-5v-DTI"/>
+                <outlet property="contentLabel" destination="y8c-FE-Lid" id="Sfx-rU-VkN"/>
+                <outlet property="timeLabel" destination="HWq-ch-FxA" id="cU5-rI-VwV"/>
+            </connections>
+            <point key="canvasLocation" x="-21" y="49"/>
+        </tableViewCell>
+    </objects>
+</document>

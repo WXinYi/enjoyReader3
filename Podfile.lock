@@ -1,0 +1,76 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - Masonry (1.0.1)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - NSObject-SafeExpectations (0.0.2)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - SVProgressHUD (2.0.3)
+  - UIAlertView+Blocks (0.9)
+  - WordPress-iOS-Shared (0.6.0):
+    - CocoaLumberjack (~> 2.2.0)
+  - WordPressCom-Analytics-iOS (0.1.17)
+  - WYPopoverController (0.3.9)
+  - YYCache (1.0.3)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - FMDB
+  - Masonry
+  - MJExtension
+  - MJRefresh (~> 3.1.12)
+  - NSObject-SafeExpectations
+  - SDWebImage (~> 3.8.1)
+  - SVProgressHUD (~> 2.0.3)
+  - UIAlertView+Blocks
+  - WordPress-iOS-Shared
+  - WordPressCom-Analytics-iOS
+  - WYPopoverController
+  - YYCache
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  NSObject-SafeExpectations: 7d7f48df90df4e11da7cfe86b64f45eff7a7f521
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
+  WordPress-iOS-Shared: f799334b41f3af509ccb76d7970f8c74a7716f14
+  WordPressCom-Analytics-iOS: 02c94167d80f43684bdc83cf8df2f4b6fc0909ba
+  WYPopoverController: a9db25ac2841a686acdc0f3a99bdb21545db32f4
+  YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
+
+PODFILE CHECKSUM: 4e6a394c5a5aa841d35f332af43b3ff1b5412bd5
+
+COCOAPODS: 1.0.0

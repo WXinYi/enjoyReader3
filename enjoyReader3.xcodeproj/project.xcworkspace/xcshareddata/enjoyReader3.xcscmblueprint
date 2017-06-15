@@ -1,0 +1,26 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FC2E8D23-CA40-439B-A59C-D87A4DC624A7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "enjoyReader3",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "enjoyReader3.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.fingermob.com\/svn\/ads",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9f075ea9-0a8f-b544-99c1-d2a141bbaafc++3031"
+    }
+  ]
+}

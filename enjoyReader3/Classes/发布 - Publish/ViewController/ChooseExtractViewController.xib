@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseExtractViewController">
+            <connections>
+                <outlet property="backBtn" destination="WQE-lA-fKj" id="V4U-6f-h7g"/>
+                <outlet property="chooseTableView" destination="SOW-jJ-J8A" id="KJr-LM-eRI"/>
+                <outlet property="navigationTitle" destination="Vhu-Yx-2e6" id="Ryx-TJ-WfR"/>
+                <outlet property="navigationView" destination="FmY-VV-kqJ" id="vPk-WN-fbQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FmY-VV-kqJ">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击选择一条摘录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhu-Yx-2e6">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="q6i-n1-Txc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQE-lA-fKj">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="1A2-bS-8LH"/>
+                                <constraint firstAttribute="width" constant="30" id="fv5-Sp-9gh"/>
+                            </constraints>
+                            <state key="normal" image="public_back"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Vhu-Yx-2e6" firstAttribute="top" secondItem="FmY-VV-kqJ" secondAttribute="top" constant="35" id="8ET-r4-9Nf"/>
+                        <constraint firstItem="WQE-lA-fKj" firstAttribute="top" secondItem="FmY-VV-kqJ" secondAttribute="top" constant="25" id="O6X-TF-kK5"/>
+                        <constraint firstItem="Vhu-Yx-2e6" firstAttribute="centerX" secondItem="FmY-VV-kqJ" secondAttribute="centerX" id="de1-D9-5Zy"/>
+                        <constraint firstAttribute="height" constant="64" id="leD-fG-LC5"/>
+                        <constraint firstItem="WQE-lA-fKj" firstAttribute="leading" secondItem="FmY-VV-kqJ" secondAttribute="leading" constant="15" id="qzq-eM-fyL"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SOW-jJ-J8A">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CYn-06-9sx"/>
+                        <outlet property="delegate" destination="-1" id="DgP-DU-gCm"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FmY-VV-kqJ" secondAttribute="trailing" id="Fxh-Dq-v9q"/>
+                <constraint firstItem="SOW-jJ-J8A" firstAttribute="top" secondItem="FmY-VV-kqJ" secondAttribute="bottom" id="GuN-mS-YwF"/>
+                <constraint firstItem="FmY-VV-kqJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MEj-Sg-wiz"/>
+                <constraint firstItem="FmY-VV-kqJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="P1u-E0-9rS"/>
+                <constraint firstAttribute="trailing" secondItem="SOW-jJ-J8A" secondAttribute="trailing" id="Qac-06-vxV"/>
+                <constraint firstAttribute="bottom" secondItem="SOW-jJ-J8A" secondAttribute="bottom" id="p3a-hF-c2Q"/>
+                <constraint firstItem="SOW-jJ-J8A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tcS-PG-CwV"/>
+            </constraints>
+            <point key="canvasLocation" x="-717" y="73"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="public_back" width="22" height="22"/>
+    </resources>
+</document>

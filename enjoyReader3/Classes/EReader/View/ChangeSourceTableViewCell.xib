@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="ChangeSourceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="339" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="源名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vso-MT-3NN">
+                        <frame key="frameInset" minX="20" minY="8" width="198" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="最新章节：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChT-Ry-cty">
+                        <frame key="frameInset" minX="20" minY="33" width="231" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="更新时间：2015-12-03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDI-zH-pPf">
+                        <frame key="frameInset" minX="20" minY="56" width="221" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="当前选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btO-Jp-maa">
+                        <frame key="frameInset" minX="259" minY="31" width="64" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vso-MT-3NN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="H02-z7-hI7"/>
+                    <constraint firstItem="Vso-MT-3NN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="OD9-JV-eJy"/>
+                    <constraint firstItem="uDI-zH-pPf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="OgT-5m-dTi"/>
+                    <constraint firstItem="ChT-Ry-cty" firstAttribute="top" secondItem="Vso-MT-3NN" secondAttribute="bottom" constant="4" id="WhG-qL-jpX"/>
+                    <constraint firstItem="btO-Jp-maa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eQu-gn-HbI"/>
+                    <constraint firstItem="uDI-zH-pPf" firstAttribute="leading" secondItem="Vso-MT-3NN" secondAttribute="leading" id="gUy-vU-iEb"/>
+                    <constraint firstAttribute="trailing" secondItem="btO-Jp-maa" secondAttribute="trailing" constant="16" id="mmS-mQ-A9f"/>
+                    <constraint firstItem="uDI-zH-pPf" firstAttribute="top" secondItem="ChT-Ry-cty" secondAttribute="bottom" constant="2" id="sFO-ap-JKR"/>
+                    <constraint firstItem="ChT-Ry-cty" firstAttribute="leading" secondItem="Vso-MT-3NN" secondAttribute="leading" id="vCa-pu-Azh"/>
+                    <constraint firstItem="ChT-Ry-cty" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vFD-Hg-W1u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="SourceName" destination="Vso-MT-3NN" id="UEg-Ng-KS6"/>
+                <outlet property="last_chapter" destination="ChT-Ry-cty" id="n8o-p2-eV5"/>
+                <outlet property="nowSource" destination="btO-Jp-maa" id="kG2-2x-Gqe"/>
+                <outlet property="updated" destination="uDI-zH-pPf" id="hj4-K2-aXG"/>
+            </connections>
+            <point key="canvasLocation" x="46" y="92"/>
+        </tableViewCell>
+        <view contentMode="scaleToFill" id="3qj-uw-sgx">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.69429206848144531" green="0.18733549118041992" blue="0.12997905910015106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="418" y="232"/>
+        </view>
+    </objects>
+</document>

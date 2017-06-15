@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="小说" translatesAutoresizingMaskIntoConstraints="NO" id="unx-5j-09G">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="fRH-M2-H44"/>
+                        <constraint firstAttribute="width" constant="24" id="k5E-1j-gpS"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近看的书" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZ2-45-gjr">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="OCo-dC-260"/>
+                        <constraint firstAttribute="width" constant="203" id="zaR-b1-XjB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jump" translatesAutoresizingMaskIntoConstraints="NO" id="rcx-Je-EOB">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="af5-zK-Xnx"/>
+                        <constraint firstAttribute="height" constant="12" id="l4J-hR-z7b"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RAm-mE-xWo">
+                    <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="tWU-sz-234"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp3-ll-VXA"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RAm-mE-xWo" secondAttribute="trailing" id="3Hn-PJ-RoF"/>
+                <constraint firstItem="unx-5j-09G" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6te-IW-o61"/>
+                <constraint firstItem="unx-5j-09G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="EWX-Px-tpa"/>
+                <constraint firstItem="RAm-mE-xWo" firstAttribute="top" secondItem="Lp3-ll-VXA" secondAttribute="bottom" id="J7A-Js-ECu"/>
+                <constraint firstItem="unx-5j-09G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="KdH-GB-rNJ"/>
+                <constraint firstItem="rZ2-45-gjr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Pa1-31-YcW"/>
+                <constraint firstAttribute="trailing" secondItem="rcx-Je-EOB" secondAttribute="trailing" constant="17" id="ULv-XG-blh"/>
+                <constraint firstItem="Lp3-ll-VXA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WrS-5S-MLD"/>
+                <constraint firstAttribute="bottom" secondItem="RAm-mE-xWo" secondAttribute="bottom" id="Wz1-t7-tvR"/>
+                <constraint firstItem="rZ2-45-gjr" firstAttribute="leading" secondItem="unx-5j-09G" secondAttribute="trailing" constant="13" id="YQx-gb-WQ7"/>
+                <constraint firstItem="rZ2-45-gjr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fy1-24-twD"/>
+                <constraint firstItem="RAm-mE-xWo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jQ6-YP-dQ7"/>
+                <constraint firstItem="rcx-Je-EOB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oXY-SV-38U"/>
+                <constraint firstAttribute="trailing" secondItem="Lp3-ll-VXA" secondAttribute="trailing" id="pzi-07-oJv"/>
+                <constraint firstItem="Lp3-ll-VXA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="t4m-HU-G4c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="HeaderBtn" destination="Lp3-ll-VXA" id="kdb-Kg-tKA"/>
+                <outlet property="headerIcon" destination="unx-5j-09G" id="iam-5G-NGz"/>
+                <outlet property="headerTitle" destination="rZ2-45-gjr" id="d9C-uB-lxC"/>
+                <outlet property="jumpImage" destination="rcx-Je-EOB" id="6xC-fj-5Fm"/>
+                <outlet property="lineView" destination="RAm-mE-xWo" id="ISc-HP-yc3"/>
+            </connections>
+            <point key="canvasLocation" x="-758" y="4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jump" width="15" height="15"/>
+        <image name="小说" width="32" height="32"/>
+    </resources>
+</document>

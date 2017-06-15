@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XXS-hw-Ppr" customClass="commentFootView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="left" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7v5-Be-tdi">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="qZJ-Bb-f5d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="点击添加你的评论            ">
+                        <color key="titleColor" red="0.49395626783370972" green="0.49808758497238159" blue="0.49802279472351074" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSz-Sy-isJ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="XWq-Db-aIy"/>
+                        <constraint firstAttribute="width" constant="20" id="ym8-K4-bjJ"/>
+                    </constraints>
+                    <state key="normal" image="评价"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-98-s0X">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="a4V-6Q-qAA"/>
+                        <constraint firstAttribute="width" constant="20" id="fuZ-Pw-ldL"/>
+                    </constraints>
+                    <state key="normal" image="分享"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qi8-O1-pYQ">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="cqq-In-Jav"/>
+                        <constraint firstAttribute="height" constant="20" id="kr3-r0-qvt"/>
+                    </constraints>
+                    <state key="normal" image="赞赞"/>
+                    <state key="selected" image="已赞.png"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cpc-0i-o8q">
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="9sG-S6-04D"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Cpc-0i-o8q" firstAttribute="leading" secondItem="XXS-hw-Ppr" secondAttribute="leading" id="1fI-mZ-Ovd"/>
+                <constraint firstAttribute="bottom" secondItem="oRg-98-s0X" secondAttribute="bottom" constant="20" id="32A-Zq-gNA"/>
+                <constraint firstAttribute="trailing" secondItem="oRg-98-s0X" secondAttribute="trailing" constant="20" id="860-2u-xQi"/>
+                <constraint firstItem="7v5-Be-tdi" firstAttribute="top" secondItem="XXS-hw-Ppr" secondAttribute="top" constant="13" id="BnV-wN-LaV"/>
+                <constraint firstItem="DSz-Sy-isJ" firstAttribute="leading" secondItem="7v5-Be-tdi" secondAttribute="trailing" constant="30" id="Gjj-9V-4JM"/>
+                <constraint firstItem="DSz-Sy-isJ" firstAttribute="top" secondItem="XXS-hw-Ppr" secondAttribute="top" constant="20" id="P5B-jn-qGg"/>
+                <constraint firstItem="oRg-98-s0X" firstAttribute="leading" secondItem="Qi8-O1-pYQ" secondAttribute="trailing" constant="22" id="Qyc-eo-iaj"/>
+                <constraint firstItem="Qi8-O1-pYQ" firstAttribute="top" secondItem="XXS-hw-Ppr" secondAttribute="top" constant="20" id="RRI-33-aHY"/>
+                <constraint firstItem="oRg-98-s0X" firstAttribute="leading" secondItem="Qi8-O1-pYQ" secondAttribute="trailing" constant="22" id="RVy-lX-o9T"/>
+                <constraint firstItem="Qi8-O1-pYQ" firstAttribute="leading" secondItem="DSz-Sy-isJ" secondAttribute="trailing" constant="22" id="SfZ-3J-YXZ"/>
+                <constraint firstItem="Qi8-O1-pYQ" firstAttribute="leading" secondItem="DSz-Sy-isJ" secondAttribute="trailing" constant="22" id="Wpj-Pf-hs4"/>
+                <constraint firstAttribute="bottom" secondItem="Qi8-O1-pYQ" secondAttribute="bottom" constant="20" id="YUA-4H-GdR"/>
+                <constraint firstAttribute="bottom" secondItem="DSz-Sy-isJ" secondAttribute="bottom" constant="20" id="ZPO-MW-3KW"/>
+                <constraint firstItem="7v5-Be-tdi" firstAttribute="leading" secondItem="XXS-hw-Ppr" secondAttribute="leading" constant="12" id="dmC-9o-cHV"/>
+                <constraint firstItem="Cpc-0i-o8q" firstAttribute="top" secondItem="XXS-hw-Ppr" secondAttribute="top" id="fVw-DS-t9f"/>
+                <constraint firstAttribute="trailing" secondItem="Cpc-0i-o8q" secondAttribute="trailing" id="fZp-0B-zGF"/>
+                <constraint firstItem="oRg-98-s0X" firstAttribute="top" secondItem="XXS-hw-Ppr" secondAttribute="top" constant="20" id="nuz-lc-Spg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allCommentBtn" destination="DSz-Sy-isJ" id="QlN-Zu-oJ1"/>
+                <outlet property="commontBtn" destination="7v5-Be-tdi" id="39M-Pt-wuf"/>
+                <outlet property="shareBtn" destination="oRg-98-s0X" id="B0n-O4-Oi3"/>
+                <outlet property="zanBtn" destination="Qi8-O1-pYQ" id="7mE-cu-UH4"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="114"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="分享" width="20" height="20"/>
+        <image name="已赞.png" width="64" height="64"/>
+        <image name="评价" width="20" height="20"/>
+        <image name="赞赞" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,203 @@
+//
+//  PrefixHeader.pch
+//  enjoyReader3
+//
+//  Created by 王馨仪 on 16/8/2.
+//  Copyright © 2016年 王馨仪. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+typedef enum {
+    draftlist
+    
+}ListType;
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Foundation/Foundation.h>
+#import "UIView+SYCategory.h"
+#import "UITabBarItem+SYCategory.h"
+#import "ERBassViewController.h"
+#import "UIImageView+WebCache.h"
+#import "HUDView.h"
+#import "TSLanguageManager.h"
+#import "WPStyleGuide.h"
+#import "WPAnalytics.h"
+#import "WPFontManager.h"
+#import "WXYClassMethodsViewController.h"
+#import "FileOperation.h"
+#import "BookInfo.h"
+#import "ArticleContentViewController.h"
+#import "Chapter.h"
+#import "BookSource.h"
+#import <UIKit/UIKit.h>
+#import "XYNetworking.h"
+#import "PPNetworkHelper.h"
+#import "YXJSON.h"
+#import "DKNightVersion.h"
+
+#ifdef DEBUG
+#define SYLog(...) NSLog(__VA_ARGS__)
+#else
+#define SYLog(...)
+#endif
+
+
+#define SYLogFunc SYLog(@"%s", __func__);
+
+#ifndef IS_IPAD
+#define IS_IPAD   ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+#endif
+#ifndef IS_IPHONE
+#define IS_IPHONE   (!IS_IPAD)
+#endif
+#ifndef IS_RETINA
+#define IS_RETINA ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] && [[UIScreen mainScreen] scale] == 2)
+#endif
+#define SYScreenH [UIScreen mainScreen].bounds.size.height
+#define SYScreenW [UIScreen mainScreen].bounds.size.width
+
+#define iPhone6P (SYScreenH == 736)
+#define iPhone6 (SYScreenH == 667)
+#define iPhone5 (SYScreenH == 568)
+#define iPhone4 (SYScreenH == 480)
+
+#define UIColorFromRGB(rgbValue)        [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define BASECOLOR UIColorFromRGB(0X25be65)
+
+
+#define CustomLocalisedString(key,description)    [TSLanguageManager localizedString:key]
+#define contains(str1, str2) ([str1 rangeOfString: str2 ].location != NSNotFound)
+//登录状态
+#define LOGIN @"LOGIN"
+#define ISLOGIN ([[NSUserDefaults standardUserDefaults] boolForKey:LOGIN])
+
+//第三方相关：
+//SMSSDK
+#define SMSAPPKEY               @"170cf59ea4dd9"
+#define SMSAPPSECRET            @"af2dc2dc82fecc7328ab95e25135c8aa"
+
+//ShareSDK:
+#define SHARESDKAPPKEY          @"16af97ce01e60"
+//新浪微博：
+#define SINAAPPKEY              @"1265229918"
+#define SINAAPPSECRET           @"c1461f2646bed57c7d1c3cac49a970b4"
+#define SINAREDIRECTURI         @"http://open.weibo.com/apps/1124270439/privilege/oauth"
+//QQ相关：
+#define QQAPPID                 @"1105433581"
+#define QQAPPKEY                @"RzuD9eeJR2kTW9P8"
+//微信：
+#define WECHATAPPID             @"wx72170fe39d1b6ee4"
+#define WECHATAPPSECRET         @"2da9f85eebfa7fec426458c10bc0eb14"
+
+
+
+#define UIColorFromHex(s)  [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0green:(((s &0xFF00) >>8))/255.0blue:((s &0xFF))/255.0alpha:1.0]
+
+
+#define SYColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define SYColor(r, g, b) SYColorA((r), (g), (b), 255)
+#define SYRandomColor SYColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define SYrayColor(v) SYColor((v), (v), (v))
+#define SYCommonBgColor SYrayColor(240)
+
+
+#define BUTTON_TEXTLABEL_FOUNT_COLOR @"#73c8ef"
+#define MAIN_TITLE_FONT_COLOR ([WXYClassMethodsViewController colorWithHexString:@"#444444"])                // 标题字体颜色
+#define MAIN_CONTENT_FONT_COLOR ([WXYClassMethodsViewController colorWithHexString:@"#979797"])              // 内容字体颜色
+#define MAIN_BG_COLOR ([WXYClassMethodsViewController colorWithHexString:@"#f7f7f7"])                        // 主背景颜色-灰白色
+#define BREATH_COLOR ([WXYClassMethodsViewController colorWithHexString:@"#0c9cdf"])                         //健康数据背景颜色
+#define MAIN_NAV_BG_COLOR ([WXYClassMethodsViewController colorWithHexString:@"#316bc7"])                    // 导航栏颜色-蓝色
+#define MAIN_LIST_BG_COLOR ([WXYClassMethodsViewController colorWithHexString:@"#ffffff"])                   // 列表背景颜色-白色
+#define MAIN_LIST_LINE_COLOR ([WXYClassMethodsViewController colorWithHexString:@"#e3e3e3"])                 // 列表线条颜色-灰白
+#define MAIN_BLUE_COLOR ([WXYClassMethodsViewController colorWithHexString:@"#6aa1f5"])                      // 辅助色 - 蓝色#f87295
+#define MAIN_RED_COLOR ([WXYClassMethodsViewController colorWithHexString:@"#f87295"])
+//字体尺寸
+#define MAIN_TITLE_FONT ([UIFont systemFontOfSize:iPhone6P?17:15])               // 标题字体大小
+#define MAIN_CONTENT_FONT ([UIFont systemFontOfSize:iPhone6P?15:13])             // 内容字体大小
+#define MAIN_TIME_FONT ([UIFont systemFontOfSize:iPhone6P?13:11])                // 时间字体大小
+#define MAIN_TYPE_FONT ([UIFont systemFontOfSize:iPhone6P?14:12])                // 消息列表“语音图文”字体大小
+#define MAIN_TITLE_FONT_SIZE ([UIFont systemFontOfSize:IPhone6Plus?19:17])               // 标题字体大小
+
+
+/*iOS7.0以上的版本*/
+#define IOS7_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+/*iOS8.0以上的版本*/
+#define IOS8_OR_LATER   ( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
+
+
+/*系统屏幕的高*/
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+/*系统屏幕的宽*/
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+
+/*判断字符串是否为空*/
+#define StringIsNullOrEmpty(str) (str==nil||[str isEqualToString:@""])
+
+/*字符串为空的时候不显示为nil,显示为空*/
+#define TextString(str) [NSString stringWithFormat:@"%@",str]
+
+/*rgb颜色转换（16进制->10进制*/
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+/*设置颜色RGB*/
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+#define THEMECOLOR [UIColor colorWithRed:186/255.0 green:28/255.0 blue:24/255.0 alpha:1.0]
+
+#define HighColor  [UIColor colorWithRed:191/255.0 green:0/255.0 blue:0/255.0 alpha:1.0]
+
+#define LowColor  [UIColor colorWithRed:141/255.0 green:14/255.0 blue:14/255.0 alpha:1.0]
+/*清除背景颜色*/
+#define CLEARCOLOR [UIColor clearColor]
+
+/*定义UIImage对象*/
+#define ImageNamed(_pointer) [UIImage imageNamed:_pointer]
+
+/*可拉伸的图片*/
+#define ResizableImage(name,top,left,bottom,right) [[UIImage imageNamed:name] resizableImageWithCapInsets:UIEdgeInsetsMake(top,left,bottom,right)]
+
+#define KBASSUrl                                           @"http://123.56.95.217"//[[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"bassUrl"]]
+
+#define KREGISTER                                          @"/register"  //注册
+#define KLOGIN                                             @"/login"     //登录
+
+/*获得版本号*/
+#define kVersion                                           @"1.0"
+
+#define KApp                                               @"enjoyreader"
+
+#define KURL                                               @"http://123.56.95.217"  //http://10.2.14.126:8000   http://123.56.95.217
+
+#define KIos                                               @"ios"
+
+//接口
+#define Platform                                           @"/api/platform"
+#define KRanking                                           @"/api/ranking"   //请求排行榜及排行榜详情
+#define KSearch                                            @"/api/search"
+#define KChapter                                           @"/api/chapter"   //请求章节内容
+#define Kbook                                              @"/api/book"   // request_type =1:book简介 2：book源信息  3：book目录信息
+
+#define KAdUrl                                             @"http://api.fingermob.com/api/adshow"//广告url
+#define KSource                                            @"YLKZ"//广告的源
+#define KLaunchAd                                          @"01"//启动广告
+#define KBookShelfFirstAd                                  @"02"//书架第一个广告
+#define KBookShelfLastAd                                   @"03"//书架第二个广告
+#define KReaderAd                                          @"04"//章节广告
+#define KAdOs                                              @"2"//操作系统类型
+
+
+
+
+
+/*DEBUG_LOG 为0时不打印信息，1时打印*/
+#define DEBUG_LOG 0
+#if DEBUG_LOG
+#define MyNSLog(fmt, args...) NSLog(@fmt, ##args)
+#else
+#define MyNSLog(fmt, args...)
+#endif
+
+
+#endif /* PrefixHeader_pch */

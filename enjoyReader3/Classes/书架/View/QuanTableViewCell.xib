@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="235" id="KGk-i7-Jjw" customClass="QuanTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="236"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="235"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luyou" translatesAutoresizingMaskIntoConstraints="NO" id="y5g-UW-FQV">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="c9m-9A-SOd"/>
+                            <constraint firstAttribute="width" constant="33" id="uYq-3f-GDr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称  08-19 09：55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcO-Lh-wDg">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="eXX-CV-rKT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.5725449148745958" green="0.57570814644848856" blue="0.57570814644848856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16i-Qi-dbi">
+                        <string key="text">新华网杭州9月4日电 中华人民共和国主席习近平4日出席二十国集团领导人杭州峰会并致开幕辞。以下为讲话摘要：面对当前挑战，我们应该加强宏观经济政策协调，合力促进全球经济增长、维护金融稳定。二十国集团成员应该结合本国实际，采取更加全面的宏观经济政策，统筹兼顾财政、货币、结构性改革政策，努力扩</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEs-Kp-bGV">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="7sY-Pw-K3O"/>
+                            <constraint firstAttribute="height" constant="15" id="xes-Pi-9zH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
+                        <state key="normal" title="324" image="评价">
+                            <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="22" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="uyP-z7-sur">
+                        <color key="backgroundColor" red="0.96068006753921509" green="0.96084433794021606" blue="0.96066969633102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.96068006753921509" green="0.96084433794021606" blue="0.96066969633102417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tableView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nv3-7j-EpN">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="LBW-Je-2f9"/>
+                            <constraint firstAttribute="width" constant="22" id="l5C-0P-ZHS"/>
+                        </constraints>
+                        <state key="normal" image="icon_doasanjiao"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sZ-Kc-YeF">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="7RV-zq-SaX"/>
+                            <constraint firstAttribute="width" constant="44" id="g0h-h9-hm4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
+                        <state key="normal" title="324" image="赞赞">
+                            <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9sZ-Kc-YeF" firstAttribute="top" secondItem="16i-Qi-dbi" secondAttribute="bottom" constant="17" id="1oZ-YT-VDF"/>
+                    <constraint firstItem="16i-Qi-dbi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="61" id="4Xc-y1-fhh"/>
+                    <constraint firstItem="9sZ-Kc-YeF" firstAttribute="leading" secondItem="YEs-Kp-bGV" secondAttribute="trailing" constant="18" id="4yY-Zz-Sf0"/>
+                    <constraint firstAttribute="trailing" secondItem="Nv3-7j-EpN" secondAttribute="trailing" constant="15" id="9Mn-M5-Ofx"/>
+                    <constraint firstAttribute="trailing" secondItem="9sZ-Kc-YeF" secondAttribute="trailing" constant="16" id="9pb-H0-lBz"/>
+                    <constraint firstItem="16i-Qi-dbi" firstAttribute="top" secondItem="Nv3-7j-EpN" secondAttribute="bottom" constant="15" id="E4D-nH-hj5"/>
+                    <constraint firstItem="YcO-Lh-wDg" firstAttribute="leading" secondItem="y5g-UW-FQV" secondAttribute="trailing" constant="13" id="I8g-H8-ygQ"/>
+                    <constraint firstItem="y5g-UW-FQV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="IWK-UH-xtJ"/>
+                    <constraint firstItem="YcO-Lh-wDg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="MIX-Lo-RGy"/>
+                    <constraint firstItem="y5g-UW-FQV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="VQs-Ja-G4z"/>
+                    <constraint firstAttribute="trailing" secondItem="16i-Qi-dbi" secondAttribute="trailing" constant="16" id="a7z-e6-558"/>
+                    <constraint firstAttribute="bottom" secondItem="uyP-z7-sur" secondAttribute="bottom" constant="17" id="azL-Xv-WPO"/>
+                    <constraint firstItem="uyP-z7-sur" firstAttribute="top" secondItem="YEs-Kp-bGV" secondAttribute="bottom" constant="18" id="b5p-8z-2Ih"/>
+                    <constraint firstItem="uyP-z7-sur" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="edM-dI-Cni"/>
+                    <constraint firstItem="9sZ-Kc-YeF" firstAttribute="leading" secondItem="YEs-Kp-bGV" secondAttribute="trailing" constant="18" id="iRS-xJ-9wM"/>
+                    <constraint firstAttribute="trailing" secondItem="uyP-z7-sur" secondAttribute="trailing" constant="15" id="qRH-Dh-zgg"/>
+                    <constraint firstItem="9sZ-Kc-YeF" firstAttribute="top" secondItem="16i-Qi-dbi" secondAttribute="bottom" constant="17" id="snj-Mo-lW4"/>
+                    <constraint firstItem="Nv3-7j-EpN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="uRf-xX-t1E"/>
+                    <constraint firstItem="YEs-Kp-bGV" firstAttribute="top" secondItem="16i-Qi-dbi" secondAttribute="bottom" constant="17" id="ydM-RB-LP4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrarBtn" destination="Nv3-7j-EpN" id="KPg-ZJ-pOs"/>
+                <outlet property="commentBtn" destination="YEs-Kp-bGV" id="NXF-d0-nRj"/>
+                <outlet property="contentLabel" destination="16i-Qi-dbi" id="sFq-ib-aRC"/>
+                <outlet property="iconImage" destination="y5g-UW-FQV" id="27k-W7-vzu"/>
+                <outlet property="nameAndTime" destination="YcO-Lh-wDg" id="E9b-U0-ZlL"/>
+                <outlet property="replyTable" destination="uyP-z7-sur" id="dck-ei-rMg"/>
+                <outlet property="zanBtn" destination="9sZ-Kc-YeF" id="tXv-Yf-6WV"/>
+            </connections>
+            <point key="canvasLocation" x="-705" y="123"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_doasanjiao" width="22" height="22"/>
+        <image name="luyou" width="150" height="150"/>
+        <image name="评价" width="20" height="20"/>
+        <image name="赞赞" width="20" height="20"/>
+    </resources>
+</document>
